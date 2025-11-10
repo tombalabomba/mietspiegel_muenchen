@@ -1,0 +1,36 @@
+{
+  "beschreibung": "Tabelle 5: Begründete Abweichungen (optional)",
+  "merkmale": {
+    "warmwasser": {
+      "max_wert": -0.70,
+      "label": "Unterschiedliche/unvollständige Warmwasserversorgung",
+      "beschreibung": "Eingeschränkte Warmwasserversorgung",
+      "typ": "abschlag"
+    },
+    "rueckgebaeude": {
+      "max_wert": 0.70,
+      "label": "Rückgebäude",
+      "beschreibung": "Wohnung in Rückgebäude/Hinterhaus",
+      "typ": "zuschlag"
+    },
+    "waermedaemmung": {
+      "max_wert": 0.90,
+      "label": "Wärmedämmung der Außenwände",
+      "beschreibung": "Hochwertige Wärmedämmung vorhanden",
+      "typ": "zuschlag"
+    },
+    "fassade_positiv": {
+      "max_wert": 0.40,
+      "label": "Besonders gestaltete Fassade (positiv)",
+      "beschreibung": "Architektonisch herausragende Fassade",
+      "typ": "zuschlag"
+    },
+    "fassade_negativ": {
+      "max_wert": -0.25,
+      "label": "Besonders gestaltete Fassade (negativ)",
+      "beschreibung": "Ungünstig gestaltete Fassade",
+      "typ": "abschlag"
+    }
+  },
+  "hinweis": "Diese Abweichungen sind optional und müssen begründet werden. Die angegebenen Werte sind Maximalwerte."
+}

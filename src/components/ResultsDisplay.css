@@ -1,0 +1,267 @@
+.results-display {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.results-display.empty,
+.results-display.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.results-display h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: #0066cc;
+}
+
+.placeholder {
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+  background: #ffebee;
+  border-radius: 4px;
+}
+
+/* Main Result */
+.result-main {
+  background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.result-main h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+}
+
+.rent-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.rent-value {
+  flex: 1;
+  text-align: center;
+}
+
+.rent-value .label {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.rent-value .value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.rent-value .unit {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.rent-value .per-sqm {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.rent-separator {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.result-main .help-text {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Calculation Details */
+.result-details {
+  margin-bottom: 25px;
+}
+
+.result-details h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.result-details h4 {
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detail-section {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item.sub {
+  padding: 8px 0 8px 15px;
+  font-size: 0.9rem;
+}
+
+.detail-item.total {
+  font-weight: 600;
+  padding-top: 12px;
+  margin-top: 8px;
+  border-top: 2px solid #0066cc;
+  border-bottom: none;
+}
+
+.detail-item.highlight {
+  background: #e3f2fd;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+}
+
+.detail-label {
+  color: #444;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #333;
+}
+
+.detail-value.positive {
+  color: #2e7d32;
+}
+
+.detail-value.negative {
+  color: #c62828;
+}
+
+/* Additional Info */
+.result-info {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.result-info h4 {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Disclaimer */
+.result-disclaimer {
+  padding: 15px;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #856404;
+}
+
+.result-disclaimer p {
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .results-display {
+    position: static;
+    padding: 20px;
+  }
+
+  .result-main {
+    padding: 20px;
+  }
+
+  .rent-range {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rent-separator {
+    transform: rotate(90deg);
+  }
+
+  .rent-value .value {
+    font-size: 1.5rem;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .info-item {
+    font-size: 0.85rem;
+  }
+}

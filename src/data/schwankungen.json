@@ -1,0 +1,15 @@
+{
+  "beschreibung": "Tabelle 4: Bestimmung der Schwankungsbreiten",
+  "nicht_zentral": {
+    "label": "Nicht zentrale Wohnlagen",
+    "unten": -2.81,
+    "oben": 2.77,
+    "beschreibung": "Schwankungsbreiten für durchschnittliche, gute und beste Lage"
+  },
+  "zentral": {
+    "label": "Zentrale Wohnlagen",
+    "unten": -3.71,
+    "oben": 3.80,
+    "beschreibung": "Schwankungsbreiten für zentrale durchschnittliche, zentrale gute und zentrale beste Lage"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "beschreibung": "Tabelle 3: Zu- und Abschläge in Euro pro m² und Monat",
+  "wohnlage": {
+    "durchschnittlich": {
+      "wert": 0.00,
+      "label": "Durchschnittliche Lage",
+      "beschreibung": "Normale Wohnlage ohne besondere Vor- oder Nachteile"
+    },
+    "gut": {
+      "wert": 0.43,
+      "label": "Gute Lage",
+      "beschreibung": "Wohnlage mit überdurchschnittlicher Qualität"
+    },
+    "best": {
+      "wert": 2.10,
+      "label": "Beste Lage",
+      "beschreibung": "Besonders bevorzugte Wohnlage"
+    },
+    "zentral_durchschnittlich": {
+      "wert": 0.80,
+      "label": "Zentrale durchschnittliche Lage",
+      "beschreibung": "Zentrale Lage mit durchschnittlicher Qualität"
+    },
+    "zentral_gut": {
+      "wert": 2.29,
+      "label": "Zentrale gute Lage",
+      "beschreibung": "Zentrale Lage mit guter Qualität"
+    },
+    "zentral_best": {
+      "wert": 2.70,
+      "label": "Zentrale beste Lage",
+      "beschreibung": "Zentrale Lage mit bester Qualität"
+    }
+  },
+  "gebaeude": {
+    "hochhaus": {
+      "wert": -0.96,
+      "label": "Hochhaus oder höheres Gebäude",
+      "beschreibung": "Gebäude mit mehr als 8 Geschossen"
+    },
+    "wohnblock": {
+      "wert": -1.13,
+      "label": "Wohnblock",
+      "beschreibung": "Großer Wohnblock mit vielen Wohneinheiten"
+    }
+  },
+  "haustyp": {
+    "sehr_einfach_altbau": {
+      "wert": -2.58,
+      "label": "Sehr einfacher Altbau",
+      "beschreibung": "Altbau mit sehr einfacher Ausstattung"
+    },
+    "einfach_altbau": {
+      "wert": -1.21,
+      "label": "Einfacher Altbau",
+      "beschreibung": "Altbau mit einfacher Ausstattung"
+    },
+    "gut_altbau": {
+      "wert": 0.36,
+      "label": "Guter Altbau",
+      "beschreibung": "Altbau mit guter Ausstattung"
+    },
+    "einfach_nachkrieg": {
+      "wert": -1.14,
+      "label": "Einfacher Nachkriegsbau",
+      "beschreibung": "Nachkriegsbau mit einfacher Ausstattung"
+    },
+    "andere": {
+      "wert": 0.00,
+      "label": "Anderer Haustyp",
+      "beschreibung": "Sonstiger Haustyp"
+    }
+  },
+  "heizung": {
+    "unvollstaendig": {
+      "wert": -2.21,
+      "label": "Unvollständige Beheizung",
+      "beschreibung": "Nicht alle Räume sind beheizbar"
+    },
+    "fussbodenheizung": {
+      "wert": 1.00,
+      "label": "Fußbodenheizung",
+      "beschreibung": "Moderne Fußbodenheizung vorhanden"
+    }
+  },
+  "sanitaer": {
+    "zusatzausstattung": {
+      "wert": 0.62,
+      "label": "Besondere Zusatzausstattung im Bad",
+      "beschreibung": "Hochwertige zusätzliche Ausstattung im Badezimmer"
+    },
+    "handtuchheizkoerper": {
+      "wert": 0.62,
+      "label": "Handtuchheizkörper",
+      "beschreibung": "Beheizbarer Handtuchhalter im Bad"
+    },
+    "bodengleiche_dusche": {
+      "wert": 0.62,
+      "label": "Separate bodengleiche Dusche",
+      "beschreibung": "Moderne ebenerdige Dusche"
+    },
+    "grosses_bad": {
+      "wert": 0.62,
+      "label": "Bad mindestens 6 m² oder zweites Bad",
+      "beschreibung": "Großes Badezimmer oder zusätzliches Badezimmer"
+    },
+    "modernisiert": {
+      "wert": 0.62,
+      "label": "Modernisiertes Bad",
+      "beschreibung": "Kürzlich modernisiertes Badezimmer"
+    }
+  },
+  "kueche": {
+    "offen": {
+      "wert": 0.55,
+      "label": "Offene Küche",
+      "beschreibung": "Offene Küche zum Wohnbereich"
+    },
+    "glaskeramik": {
+      "wert": 0.53,
+      "label": "Glaskeramik-Kochmulde/Induktion",
+      "beschreibung": "Modernes Kochfeld"
+    },
+    "kuehlschrank": {
+      "wert": 0.53,
+      "label": "Kühlschrank/Kühl-Gefrierkombination",
+      "beschreibung": "Einbaukühlschrank vorhanden"
+    },
+    "geschirrspueler": {
+      "wert": 0.53,
+      "label": "Geschirrspülmaschine",
+      "beschreibung": "Einbaugeschirrspüler vorhanden"
+    }
+  },
+  "fussboden": {
+    "ohne": {
+      "wert": -1.54,
+      "label": "Ohne Fußbodenbelag",
+      "beschreibung": "Kein Bodenbelag vorhanden"
+    },
+    "einfach": {
+      "wert": -1.12,
+      "label": "Einfacher Boden",
+      "beschreibung": "Einfacher Bodenbelag"
+    },
+    "gut": {
+      "wert": 1.37,
+      "label": "Guter Boden",
+      "beschreibung": "Hochwertiger Bodenbelag (z.B. Parkett)"
+    },
+    "modernisiert": {
+      "wert": 1.86,
+      "label": "Modernisierter Boden",
+      "beschreibung": "Neu verlegter hochwertiger Bodenbelag"
+    }
+  },
+  "terrasse_balkon": {
+    "wert": 0.55,
+    "label": "Terrasse/Balkon",
+    "beschreibung": "Terrasse oder Balkon vorhanden"
+  },
+  "weitere": {
+    "besondere_ausstattung": {
+      "wert": 0.77,
+      "label": "Besondere Ausstattung",
+      "beschreibung": "Besondere hochwertige Ausstattungsmerkmale"
+    },
+    "modernisierte_fenster": {
+      "wert": 2.10,
+      "label": "Modernisierte Fenster",
+      "beschreibung": "Neue energieeffiziente Fenster"
+    }
+  }
+}

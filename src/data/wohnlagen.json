@@ -1,0 +1,48 @@
+{
+  "beschreibung": "Wohnlagenkategorien für München",
+  "kategorien": [
+    {
+      "id": "durchschnittlich",
+      "name": "Durchschnittliche Lage",
+      "farbe": "gelb",
+      "beschreibung": "Normale Wohnlage ohne besondere Vor- oder Nachteile",
+      "ist_zentral": false
+    },
+    {
+      "id": "gut",
+      "name": "Gute Lage",
+      "farbe": "hellgrün",
+      "beschreibung": "Wohnlage mit überdurchschnittlicher Qualität",
+      "ist_zentral": false
+    },
+    {
+      "id": "best",
+      "name": "Beste Lage",
+      "farbe": "dunkelgrün",
+      "beschreibung": "Besonders bevorzugte Wohnlage",
+      "ist_zentral": false
+    },
+    {
+      "id": "zentral_durchschnittlich",
+      "name": "Zentrale durchschnittliche Lage",
+      "farbe": "orange",
+      "beschreibung": "Zentrale Lage mit durchschnittlicher Qualität",
+      "ist_zentral": true
+    },
+    {
+      "id": "zentral_gut",
+      "name": "Zentrale gute Lage",
+      "farbe": "rot",
+      "beschreibung": "Zentrale Lage mit guter Qualität",
+      "ist_zentral": true
+    },
+    {
+      "id": "zentral_best",
+      "name": "Zentrale beste Lage",
+      "farbe": "dunkelrot",
+      "beschreibung": "Zentrale Lage mit bester Qualität",
+      "ist_zentral": true
+    }
+  ],
+  "hinweis": "Die Wohnlage wird anhand der Wohnlagenkarte bestimmt. Zentrale Lagen haben höhere Schwankungsbreiten."
+}

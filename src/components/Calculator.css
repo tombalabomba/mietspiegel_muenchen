@@ -1,0 +1,59 @@
+.calculator-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.calculator-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+.calculator-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+}
+
+.calculator-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.calculator-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.calculator-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Mobile responsive */
+@media (max-width: 968px) {
+  .calculator-content {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .calculator-header p {
+    font-size: 1rem;
+  }
+}

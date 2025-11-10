@@ -1,0 +1,21 @@
+{
+  "beschreibung": "Tabelle 1: Durchschnittliche Betriebskosten in Euro pro m² und Monat",
+  "positionen": {
+    "wasser_abwasser": 0.34,
+    "strassenreinigung": 0.07,
+    "muellabfuhr": 0.21,
+    "grundsteuer": 0.25,
+    "heizung_warmwasser": 1.60,
+    "schornsteinfeger": 0.02,
+    "sach_haftpflichtversicherung": 0.13,
+    "hauswart": 0.23,
+    "gartenpflege": 0.08,
+    "allgemeinstrom": 0.07,
+    "treppenhausreinigung": 0.09,
+    "hausmeister": 0.04,
+    "aufzug": 0.09,
+    "gemeinschaftsantenne": 0.04,
+    "sonstige": 0.12
+  },
+  "gesamt": 3.38
+}
