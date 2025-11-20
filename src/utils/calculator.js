@@ -209,9 +209,13 @@ export const calculateRent = (inputData) => {
     return { error: 'Ungültige Wohnfläche oder Baujahr' };
   }
 
-  // Step 3: Zuschläge
+  // Step 3: Zuschläge (add wohnlage to features)
+  const featuresWithWohnlage = {
+    ...features,
+    wohnlage: wohnlage
+  };
   const { total: zuschlaegeSumme, details: zuschlaege_details } =
-    calculateZuschlaege(features || {});
+    calculateZuschlaege(featuresWithWohnlage || {});
 
   // Step 4: Schwankungsbreiten
   const schwankung = getSchwankungsbreiten(wohnlage);

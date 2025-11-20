@@ -69,7 +69,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
           <span className="reference-hint">
             → Mietspiegel 2025: Tabelle 1, Spalte "Wohnlage" |
             <a
-              href="https://www.muenchen.de/rathaus/dam/jcr:cd6c3b7d-3b5f-4b5e-8b5e-3b5e3b5e3b5e/wohnlagenkarte-muenchen-2025.pdf"
+              href="https://geoportal-karten-2025.muenchen.de/mietspiegel_wohnlage/?query="
               target="_blank"
               rel="noopener noreferrer"
               className="map-link"
