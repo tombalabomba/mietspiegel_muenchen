@@ -23,9 +23,9 @@
   text-align: center;
   margin-bottom: 20px;
   padding: 20px 15px;
-  background: linear-gradient(135deg, #116dff 0%, #0d54cc 100%);
+  background: #116dff;
   color: white;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .calculator-header h1 {
