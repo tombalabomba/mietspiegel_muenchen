@@ -11,7 +11,7 @@
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 1.5rem;
-  color: #0066cc;
+  color: #116dff;
 }
 
 .input-group {
@@ -58,8 +58,8 @@
 .input-field input[type='number']:focus,
 .input-field select:focus {
   outline: none;
-  border-color: #0066cc;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  border-color: #116dff;
+  box-shadow: 0 0 0 3px rgba(17, 109, 255, 0.1);
 }
 
 .radio-group,
@@ -99,6 +99,25 @@
   color: #666;
   margin: 0 0 12px 0;
   font-style: italic;
+}
+
+.reference-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 5px 0 8px 0;
+  font-style: italic;
+}
+
+.map-link {
+  color: #116dff;
+  text-decoration: none;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.map-link:hover {
+  text-decoration: underline;
 }
 
 /* Mobile responsive */

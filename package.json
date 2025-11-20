@@ -4,6 +4,7 @@
   "description": "Munich Rent Calculator based on Mietspiegel 2025",
   "private": true,
   "dependencies": {
+    "jspdf": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"

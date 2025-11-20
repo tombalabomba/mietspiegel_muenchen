@@ -27,6 +27,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
             Wohnfläche (m²) *
             <Tooltip text="Geben Sie die Wohnfläche Ihrer Wohnung in Quadratmetern ein (20-160 m²)" />
           </label>
+          <span className="reference-hint">→ Mietspiegel 2025: Tabelle 1, Spalte "Wohnfläche"</span>
           <input
             type="number"
             id="wohnflaeche"
@@ -44,6 +45,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
             Baujahr *
             <Tooltip text="Wählen Sie den Zeitraum, in dem Ihr Gebäude errichtet wurde" />
           </label>
+          <span className="reference-hint">→ Mietspiegel 2025: Tabelle 1, Zeile "Baujahr"</span>
           <select
             id="baujahr"
             value={inputData.baujahr}
@@ -64,6 +66,17 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
             Wohnlage *
             <Tooltip text="Wählen Sie die Wohnlagenkategorie gemäß Münchner Wohnlagenkarte" />
           </label>
+          <span className="reference-hint">
+            → Mietspiegel 2025: Tabelle 1, Spalte "Wohnlage" |
+            <a
+              href="https://www.muenchen.de/rathaus/dam/jcr:cd6c3b7d-3b5f-4b5e-8b5e-3b5e3b5e3b5e/wohnlagenkarte-muenchen-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="map-link"
+            >
+              📍 Zur Wohnlagenkarte
+            </a>
+          </span>
           <select
             id="wohnlage"
             value={inputData.wohnlage}
@@ -89,6 +102,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
             Gebäudetyp
             <Tooltip text="Wählen Sie, falls zutreffend, den speziellen Gebäudetyp" />
           </label>
+          <span className="reference-hint">→ Mietspiegel 2025: Tabelle 2, Zeile "Gebäudetyp"</span>
           <div className="radio-group">
             <label>
               <input
@@ -121,6 +135,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
             Haustyp
             <Tooltip text="Wählen Sie die Kategorie, die Ihr Gebäude am besten beschreibt" />
           </label>
+          <span className="reference-hint">→ Mietspiegel 2025: Tabelle 2, Zeile "Haustyp"</span>
           <div className="radio-group">
             <label>
               <input
@@ -154,6 +169,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Heizung */}
       <section className="input-group">
         <h3>Heizung</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Heizungsart"</span>
         <div className="radio-group">
           <label>
             <input
@@ -184,6 +200,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Sanitärbereich */}
       <section className="input-group">
         <h3>Sanitärbereich</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Sanitärausstattung"</span>
         <p className="help-text">Mehrfachauswahl möglich</p>
         <div className="checkbox-group">
           {Object.entries(zuschlaege.sanitaer).map(([key, data]) => (
@@ -202,6 +219,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Küche */}
       <section className="input-group">
         <h3>Küche</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Küchenausstattung"</span>
         <p className="help-text">Mehrfachauswahl möglich</p>
         <div className="checkbox-group">
           {Object.entries(zuschlaege.kueche).map(([key, data]) => (
@@ -220,6 +238,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Fußboden */}
       <section className="input-group">
         <h3>Fußboden</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Fußbodenbelag"</span>
         <div className="radio-group">
           <label>
             <input
@@ -250,6 +269,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Terrasse/Balkon */}
       <section className="input-group">
         <h3>Außenbereich</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Außenbereich"</span>
         <div className="checkbox-group">
           <label>
             <input
@@ -266,6 +286,7 @@ const InputSection = ({ inputData, onInputChange, onFeatureChange }) => {
       {/* Weitere Merkmale */}
       <section className="input-group">
         <h3>Weitere Merkmale</h3>
+        <span className="reference-hint">→ Mietspiegel 2025: Tabelle 3, "Zusätzliche Ausstattung"</span>
         <p className="help-text">Mehrfachauswahl möglich</p>
         <div className="checkbox-group">
           {Object.entries(zuschlaege.weitere).map(([key, data]) => (

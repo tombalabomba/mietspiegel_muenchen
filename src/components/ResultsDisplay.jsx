@@ -1,4 +1,5 @@
 import React from 'react';
+import { generatePDF } from '../utils/pdfGenerator';
 import './ResultsDisplay.css';
 
 const ResultsDisplay = ({ result, inputData }) => {
@@ -25,9 +26,18 @@ const ResultsDisplay = ({ result, inputData }) => {
 
   const wohnflaeche = parseFloat(inputData.wohnflaeche) || 0;
 
+  const handleDownloadPDF = () => {
+    generatePDF(result, inputData);
+  };
+
   return (
     <div className="results-display">
-      <h2>Berechnungsergebnis</h2>
+      <div className="results-header">
+        <h2>Berechnungsergebnis</h2>
+        <button className="download-button" onClick={handleDownloadPDF} title="Als PDF herunterladen">
+          📥 PDF herunterladen
+        </button>
+      </div>
 
       {/* Main Result */}
       <div className="result-main">

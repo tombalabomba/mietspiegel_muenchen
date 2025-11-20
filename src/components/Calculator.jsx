@@ -65,7 +65,10 @@ const Calculator = () => {
 
       <footer className="calculator-footer">
         <p>
-          Grundlage: Münchner Mietspiegel 2025 | Alle Angaben ohne Gewähr
+          Grundlage: <a href="https://www.muenchen.de/rathaus/wirtschaft-wissenschaft/wohnen/mietspiegel.html" target="_blank" rel="noopener noreferrer">Münchner Mietspiegel 2025</a> der Landeshauptstadt München
+        </p>
+        <p className="disclaimer">
+          Alle Angaben ohne Gewähr | Dieser Rechner dient zur ersten Orientierung
         </p>
       </footer>
     </div>
